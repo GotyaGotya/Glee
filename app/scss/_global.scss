@@ -6,12 +6,12 @@ a {
 body {
     color: #436372;
     font-size: 15px;
-    font-weight: 30px;
+    line-height: 30px;
     @extend %dmsans-700;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
 }
