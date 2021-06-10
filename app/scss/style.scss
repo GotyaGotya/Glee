@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -74,6 +75,7 @@
     width: 1px;
     height: 32px;
     background-color: #fde7d3;
+    cursor: default;
   }
   &__num {
     transform: translate(10px, -25px);
@@ -121,7 +123,7 @@
     margin-bottom: 37px;
   }
   &__contact{
-    width: 193px;
+    width: 192px;
     margin-right: 100px;
   }
   &__adress{
@@ -183,6 +185,7 @@
     color: #ffffff;
     border: none;
     background-color: #a3bbc8;
+    cursor: pointer;
   }
 }
 .footer-bottom{
@@ -211,5 +214,121 @@
   }
 }
 
+.top-slider{
+  &__container{
+    max-width: 1770px;
+    background-color: #fcd7b6;
+  }
+  &__inner ::before{
+    content: "";
+    position: absolute;
+    max-width: 634px;
+    height: 115%;
+    max-height: 634px;
+    top: -120px;
+    right: -10%;
+    border-radius: 50%;
+    background-image: '../images/slider/top-slider-bg.png';
+  }
+  &__item{
+    display: flex !important;
+    justify-content: center;
+    padding: 225px 0 205px;
+  }
+  &__title{
+    max-width: 500px;
+    margin-bottom: 48px;
+    color: $default;
+    font-size: 72px;
+    line-height: 70px;
+    @extend %Rubik-500;
+  }
+  &__text{
+    max-width: 370px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+    @extend %Rubik-500;
+  }
+  &__link{
+    @extend %btn;
+    background-color: #a3bbc8;
+    color: #ffffff;
+  }
+}
+.slick-dots{
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  li + li{
+    margin-left: 11px;
+  }
+  li{
+    button{
+      @extend %Rubik-500;
+      width: 30px; 
+      height: 30px;
+      border-radius: 50%; 
+      padding: 0;
+      background-color: #ffffff;
+      opacity: 0.3;
+      outline: none;
+      border: 0;
+      font-size: 12px;
+      line-height: 8px;
+      color: $default;
+    }
+    &.slick-active{
+      button{
+      background-color: #ffffff;
+      opacity: 1;
+      }
+    }
+  }
+}
+
+.container-support{
+  width: 1770px;
+  background-color: #fef7f0;
+  padding: 0
+}
+.support-items{
+  padding: 47px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.support-item{
+    max-width: 272px;
+    display: flex;
+  &__support{
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  &__delivery{
+    margin-right: 30px;
+    width: 50px;
+    height: 30px;
+  }
+  &__payment{
+    margin-right: 40px;
+    width: 50px;
+    height: 45px;
+  }
+  &__title{
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+  &__text{
+    width: 213px;
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #585858;
+  }
+}
 
 @import 'media';
