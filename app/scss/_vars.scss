@@ -3,6 +3,7 @@ $accent: #436372;
 $title: #191919;
 $title-footer: #1f2044;
 
+
 %dmsans-700 {
     font-family: 'DMSans-Bold', sans-serif;
     font-weight: 700;
@@ -32,4 +33,14 @@ $title-footer: #1f2044;
 %Rubik-400{
     font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
+}
+
+%btn{
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    @extend %Rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    padding: 25px 19px 20px 27px;
 }
