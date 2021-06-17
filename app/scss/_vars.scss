@@ -44,3 +44,10 @@ $title-footer: #1f2044;
     line-height: 12px;
     padding: 25px 19px 20px 27px;
 }
+
+@function max($numbers...) {
+ @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+ @return m#{i}n(#{$numbers});
+}

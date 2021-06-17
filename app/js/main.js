@@ -20,8 +20,7 @@ $(function(){
   var mixer1 = mixitup(containerEl1, config);
   var mixer2 = mixitup(containerEl2, config);
 
-  // var mixer1 = mixitup('.product__items');
-  // var mixer2 = mixitup('.desing__items');
+
 
 
 
