@@ -45,11 +45,11 @@
             <img class="user-nav__link-img" src="images/icons/search.svg" alt="search">
           </a>
           <div class="user-nav__wrapper">
-            <a class="user-nav__link-heart" href="#">
+            <a class="user-nav__link user-nav__link--line" href="#">
               <img class="user-nav__link-img" src="images/icons/heart.svg" alt="heart">
               <span class="user-nav__num">0</span>
             </a>
-            <a class="user-nav__link-buy" href="#">
+            <a class="user-nav__link" href="#">
               <img class="user-nav__link-img" src="images/icons/buy.svg" alt="buy">
               <span class="user-nav__num">0</span>
             </a>
@@ -63,6 +63,50 @@
   </header>
 
   <main>
+    <section class="top">
+      <h2 class="top__title">
+        Log in
+      </h2>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Log in</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="modal">
+      <div class="container">
+
+        <form class="modal__form" action="#">
+          <label class="modal__label">
+            Username or email address *
+            <input class="modal__input" type="text" required>
+          </label>
+          <label class="modal__label">
+            Password *
+            <input class="modal__input" type="password" required>
+          </label>
+          <button class="submit">Login</button>
+          <div class="modal__label-wraper">
+            <label class="modal__label modal__label-checkbox">
+              <input type="checkbox">
+              Remember me
+            </label>
+            <a class="modal__lost" href="#">Lost your password?</a>
+          </div>
+        </form>
+        <div class="modal__links">
+          <a class="modal__link" href="#">Not registered? No problem</a>
+          <a class="modal__link-btn" href="#">Create an account</a>
+        </div>
+      </div>
+    </section>
+
     <section class="cooperate cooperate-otherpage">
       <div class="min-container">
         <div class="cooperate__logo">
@@ -84,10 +128,13 @@
         </div>
       </div>
     </section>
+
+
+
   </main>
 
   <footer class="footer">
-    <div class="footer-container">
+    <div class="footer-container min-container">
       <div class="footer-top">
 
         <div class="footer-top__item footer-top__contact">
