@@ -50,9 +50,17 @@ $title-footer: #1f2044;
     justify-content: space-between;
     max-width: 200px;
     @extend %Rubik-500;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 12px;
     padding: 25px 19px 20px 27px;
+}
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
 
 @function max($numbers...) {
