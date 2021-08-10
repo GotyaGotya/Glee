@@ -55,8 +55,6 @@ $(function(){
     },
   });
 
-  
-
   $('.product-related__slider-box').slick({
     slidesToShow: 4,
     dots: false,
@@ -76,7 +74,8 @@ $(function(){
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true,
-    spacing: "8px"
+    spacing: "8px",
+    
   });
 
   var containerEl1 = document.querySelector('[data-ref="container-1"]');
