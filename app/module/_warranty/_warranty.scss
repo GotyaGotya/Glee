@@ -1,0 +1,29 @@
+.warranty{
+  padding: 84px 0 78px;
+  margin-bottom: 120px;
+  background-color: #fcd7b6;
+  &__items{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  &__item-li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__item-logo{
+    display: flex;
+    margin-bottom: 22px;
+  }
+  &__item-title{
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $default;
+  }
+  &__item-text{
+    padding-top: 14px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,72 @@
+.team{
+  padding-bottom: 180px;
+  &__box{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrapper{
+    max-width: 310px;
+  }
+  &__title{
+    font-size: 36px;
+    color: $default;
+  }
+  &__text{
+    padding: 26px 0 34px;
+    font-size: 16px;
+    @extend %Rubik-400;
+  }
+  &__link{
+    @extend %btn;
+    @extend %poppins-500;
+    color: #ffffff;
+    background-color: #a3bbc8;
+    border-radius: 5px;
+    max-width: 170px;
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px 30px;
+  }
+  &__item{
+    position: relative;
+  }
+  &__wrap{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 326px;
+    min-height: 110px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    top: 268px;
+  }
+  &__name{
+    @extend %dmsans-700;
+    font-size: 22px;
+    line-height: 26px;
+    color: $accent;
+  }
+  &__wrap-text{
+    font-size: 16px;
+    line-height: 30px;
+    color: #565872;
+  }
+  &__social{
+    display: flex;
+  }
+  &__social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(246, 246, 246);
+    width: 40px;
+    height: 40px;
+  }
+  &__social-link + &__social-link{
+    margin-left: 8px;
+  }
+}

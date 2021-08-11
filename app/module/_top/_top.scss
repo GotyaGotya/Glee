@@ -1,0 +1,41 @@
+.top{
+  padding: 32px 0;
+  background-color: #edf1f4;
+  &__title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 36px;
+    line-height: 24px;
+    @extend %Rubik-300;
+    color: #222933;
+  }
+}
+.breadcrumbs{
+  display: flex;
+  justify-content: center;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    font-size: 14px;
+    @extend %Rubik-500;
+    color: #737980;
+    padding-right: 20px;
+    position: relative;
+    &::after{
+      content: "/";
+      position: absolute;
+      left: 44px;
+    }
+    &:last-child{
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link{
+    color: inherit;
+  }
+}
