@@ -1,0 +1,348 @@
+.blog-page{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 830px;
+    margin-right: 70px;
+  }
+  &__img-box{
+    margin-bottom: 40px;
+  }
+  &__data-inner{
+    position: relative;
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 274px;
+    height: 70px;
+    background-color: #a3bbc8;
+    font-size: 12px;
+  }
+  &__data-link{
+    margin-right: 24px;
+    color: #ffffff;
+  }
+  &__data-author{
+    color: #ffffff;
+  }
+  &__item-box{
+    @extend %Rubik-400;
+    margin-bottom: 38px;
+  }
+  &__item-title{
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333333;
+  }
+  &__text{
+    color: $default;
+    margin-bottom: 40px;
+  }
+  &__aside{
+    width: 270px;
+  }
+  &__search{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #eef2f5;
+    width: 268px;
+    height: 44px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+  }
+  &__search-inp{
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    width: 220px;
+  }
+  &__search-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 48px;
+    height: 42px;
+    background-color: #edf1f4;
+    border: none;
+  }
+  &__blockquote{
+    padding: 24px 109px 0px 34px;
+    margin-bottom: 46px;
+    border-left: 7px solid #a3bbc8;
+    background: #edf1f4;
+    @extend %Rubik-400;
+    color: $default;
+  }
+  &__blockquote-author{
+    position: relative;
+    padding: 0 0 22px 44px;  
+    &::before{
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #a3bbc8;
+    width: 20px;
+    top: 14px;
+    left: 0;
+    }
+  }
+  &__info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 46px;
+  }
+  &__info-img{
+    margin-right: 30px;
+  }
+  &__info-wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  &__info-title{
+    @extend %Rubik-500;
+    font-size: 18px;
+    color: $default;
+    margin-bottom: 24px;
+  }
+  &__info-text{
+    @extend %Rubik-400;
+    color: #565872;
+  }
+  &__info-wrap{
+    margin-bottom: 62px;
+  }
+  &__author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+    margin-bottom: 66px;
+  }
+  &__author-one{
+    display: flex;
+  }
+  &__author-img{
+    margin-right: 28px;
+    width: 76px;
+    height: 76px;
+  }
+  &__author-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+  }
+  &__author-name{
+    margin-bottom: 10px;
+    font-size: 18px;
+    @extend %Rubik-500;
+    color: #333333;
+  }
+  &__author-position{
+    @extend %Rubik-400;
+    color: #666666;
+  }
+  &__author-two{
+    display: flex;
+    flex-direction: column;
+    margin-right: 22px !important;
+  }
+  &__author-item{
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &__author-title{
+    @extend %Rubik-400;
+    color: #333333;
+    margin-right: 20px;
+  }
+  &__author-text{
+    color: #a1a1a1;
+    @extend %Rubik-400;
+    padding-right: 8px;
+    position: relative;
+    &::after{
+      content: ",";
+      position: absolute;
+    }
+    &:last-child{
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__author-social{
+    margin-right: 22px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.product-comments{
+  &__heading{
+    font-size: 24px;
+    @extend %Rubik-700;
+    margin-bottom: 60px;
+  }
+}
+
+.comment{
+  display: flex;
+  margin: 30px 0;
+  clear: both;
+  &__author-photo{
+    margin-right: 30px;
+    width: 100px;
+    height: 100px;
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__author{
+    @extend %Rubik-700;
+  }
+  &__date{
+    font-size: 14px;
+    color: #9e9e9e;
+  }
+  &__body{
+    margin-bottom: 10px;
+  }
+  &__text{
+    color: #565872;
+  }
+  &__reply{
+    font-size: 14px;
+    padding: 0;
+    color: #516278;
+    background: none;
+    border: none;
+  }
+}
+
+.comment-replies{
+  cursor: pointer;
+  padding: 30px 0;
+  float: right;
+  max-width: 700px;
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.comments{
+  margin-top: 80px;
+  &__form-title{
+    font-size: 24px;
+    @extend %Rubik-700;
+    margin-bottom: 50px;
+  }
+  &__form-textbox{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form-text{
+    margin-bottom: 20px;
+    width: 400px;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    outline: none;
+    &:focus{
+      color: #333333;
+      border-color: #a3bbc8;
+      &::placeholder{
+       color: #333333;
+      }
+    }
+  }
+  &__form-textarea{
+    padding: 20px 60px 0 20px;
+    margin-bottom: 40px;
+    width: 830px;
+    height: 120px;
+    border: 1px solid #e5e5e5;
+    outline: none;
+    background: url('../images/icons/3.svg') no-repeat scroll 18px 15px;
+    background-position: bottom 85% right 21px;
+    resize: none;
+    &:focus{
+      color: #333333;
+      border-color: #a3bbc8;
+      &::placeholder{
+       color: #333333;
+      }
+    }
+  }
+  &__form-btn{
+    width: 190px;
+    height: 50px;
+    background-color: #a3bbc8;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+  }
+}
+
+.name{
+  background: url('../images/icons/1.svg') no-repeat scroll 18px 13px;
+  padding: 0 60px 0 20px;
+  background-position: bottom 50% right 21px;
+}
+
+.email{
+  background: url('../images/icons/2.svg') no-repeat scroll 14px 14px;
+  padding: 0 60px 0 20px;
+  background-position: bottom 50% right 21px;
+}
+
+.blog-title{
+  margin-right: 30px;
+}
+
+.recent-blog{
+  &__item{
+    display: flex;
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__img-link{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+  &__wrap{
+    width: 180px
+  }
+  &__title{
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: #333333;
+    line-height: 20px;
+  }
+  &__data{
+    font-size: 12px;
+    color: #9a9a9a;
+  }
+}
+
+.blog-one{
+  &__text{
+    @extend %Rubik-500;
+    margin-bottom: 25px;
+  }
+}
