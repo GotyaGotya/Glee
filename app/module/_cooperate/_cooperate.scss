@@ -1,0 +1,19 @@
+.cooperate{
+  padding: 260px 0 90px;
+  margin-top: -200px;
+  background-color: #fef7f0;
+  &__logo{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__logo-wrapper{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.cooperate-otherpage{
+  padding-top: 80px;
+  margin: 0;
+}
+

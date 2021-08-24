@@ -1,0 +1,61 @@
+.modal{
+  padding-top: 120px;
+  max-width: 576px;
+  margin: 0 auto;
+  &__form{
+    max-width: 474px;
+  }
+  &__label{
+    display: block;
+    margin-bottom: 28px;
+    @extend %Rubik-400;
+    font-size: 14px;
+  }
+  &__input{
+    display: block;
+    margin-top: 4px;
+    height: 60px;
+    padding: 0 15px;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    outline: 0;
+  }
+  &__label-checkbox{
+    margin: 0;
+  }
+  &__label-wraper{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 34px;
+    border-bottom: 2px solid #f6f6f6;
+    @extend %Rubik-400;
+    margin-bottom: 32px;
+  }
+   &__lost{
+     padding: 0;
+      color: #436372;
+    }
+    &__links{
+      max-width: 470px;
+    }
+    &__link{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+      font-size: 14px;
+      line-height: 24px;
+      color: #436372;
+      @extend %Rubik-400;
+    }
+    &__link-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 120px;
+      @extend %Rubik-500;
+      color: $default;
+      font-size: 18px;
+      height: 60px;
+      border: 2px solid #a3bbc8;
+    }
+}
