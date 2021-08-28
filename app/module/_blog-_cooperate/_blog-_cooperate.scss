@@ -1,5 +1,4 @@
 .blog{
-
   &__wrapper{
     display: flex;
     justify-content: space-between;
@@ -21,7 +20,7 @@
     grid-gap: 30px
   }
   &__item{
-    width: 370px;
+    max-width: 370px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
@@ -86,3 +85,39 @@
   }
 }
 
+@media (max-width: 1000px){
+  .blog{
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item-info{
+      margin: 0 15px;
+    }
+  }
+}
+
+@media (max-width: 800px){
+  .blog{
+    &__items{
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+    &__wrapper{
+      flex-direction: column;
+    }
+    &__all-link{
+      justify-content: flex-start;
+    }
+    &__all-linkimg{
+      padding-left: 10px;
+    }
+  }
+  .cooperate{
+    &__logo{
+      flex-wrap: wrap;
+    }
+    &__logo-wrapper{
+      margin: 10px 10px;
+    }
+  }
+}

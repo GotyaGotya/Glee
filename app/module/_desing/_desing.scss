@@ -45,3 +45,28 @@
     color: #a3bbc8;
   }
 }
+
+@media (max-width: 1200px){
+  .desing__items{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media (max-width: 800px){
+  .desing__link-wrapper {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 600px){
+  .desing__items{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .desing__filter-btn+.desing__filter-btn {
+    margin-left: 12px;
+}
+}

@@ -180,3 +180,32 @@
     }
   }
 }
+
+@media (max-width: 1200px){
+  .product{
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      padding: 0px 40px;
+    }
+  }
+  .product-item{
+    max-width: 100%;  
+    width: 100%;
+    &__img-box{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .product{
+    &__items{
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0px 10px;
+    }
+  }
+  .product__filter-btn+.product__filter-btn {
+    margin-left: 12px;
+  }
+}
