@@ -1,0 +1,84 @@
+.about{
+  padding-top: 120px;
+  margin-bottom: 120px;
+  &__top{
+    display: flex;
+  }
+  &__experience{
+    padding: 84px 0 0 48px;
+  }
+  &__experience-wrap{
+    display: flex;
+    margin-bottom: 44px;
+  }
+  &__experience-ears{
+    font-size: 140px;
+    line-height: 110px;
+    @extend %Rubik-700;
+    color: #a3bbc8;
+  }
+  &__experience-wraptext{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 26px;
+  }
+  &__experience-text{
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: $default;
+  }
+  &__title{
+    display: block;
+    margin-bottom: 40px;
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $default;
+  }
+  &__text{
+    position: relative;
+    height: 180px;
+    margin-bottom: 36px;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 500px;
+      top: 178px;
+      left: 0px;
+      border-bottom: 2px solid #e6eaf0;
+    }
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    max-width: 526px;
+  }
+  &__item{
+    position: relative;
+  }
+  &__item + &__item::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: -28px;
+    height: 80px;
+    border-left: 1px solid #e6eaf0;
+  }
+  &__item-li{
+    display: flex;
+    align-items: center;
+  }
+  &__item-promo{
+    padding-left: 20px
+  }
+  &__item-title{
+    font-size: 36px;
+    color: $default;
+    @extend %dmsans-700;
+  }
+  &__item-text{
+    padding-left: 4px;
+    font-size: 16px;
+    color: #4c4c4c;
+  }
+}

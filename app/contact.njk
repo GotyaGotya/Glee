@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee</title>
+    <link rel="stylesheet" href="css/contact.min.css">
+  </head>
+
+  <body>
+
+    {% include 'app/module/_header/_header.html' %}
+
+    <main>
+
+      {% include 'app/module/_top/_top.html' %}
+      {% include 'app/module/_contact/_contact.html' %}
+      {% include 'app/module/_blog-_cooperate/_blog-_cooperate.html' %}
+
+    </main>
+
+    {% include 'app/module/_footer/_footer.html' %}
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script>
+      let map;
+
+  function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: 29.75224593078017, lng:  -95.28306595666426 },
+      zoom: 7,
+    });
+  }
+    </script>
+    
+    <script src="js/main.min.js"></script>
+  </body>
+
+</html>

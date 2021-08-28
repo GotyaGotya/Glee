@@ -1,0 +1,129 @@
+.footer-top{
+  display: flex;
+  padding: 80px 0 77px;
+  margin-bottom: 37px;
+  border-bottom: 1px solid #dae4e9;
+  border-color: #dae4e9;
+  
+  &__title{
+    padding-top: 21px;
+  }
+  &__logo{
+    margin-bottom: 37px;
+  }
+  &__contact{
+    width: 192px;
+    margin-right: 100px;
+  }
+  &__adress{
+    @extend %Rubik-400; 
+    line-height: 24px;
+    font-size: 14px;
+    color: #7b7b7b;
+  }
+  &__nav{
+    width: 170px;
+    margin-right: 130px;
+  }
+  &__item-form{
+    width: 270px;
+  }
+  &__title{
+    margin-bottom: 29px;
+    font-size: 16px;
+    line-height: 21px;
+    color: $title-footer;
+    @extend %dmsans-700;
+    text-transform: uppercase;
+  }
+  &__link,
+  &__text,
+  &__phone,
+  &__email{
+    font-size: 14px;
+    line-height: 32px;
+    @extend %Rubik-400; 
+    color: #7b7b7b;
+  }
+  &__text{
+    line-height: 24px;
+    margin-bottom: 38px;
+  }
+  &__form{
+    display: flex;
+  }
+  &__form-input{
+    width: 170px;
+    height: 38px;
+    padding-left: 16px;
+    font-size: 12px;
+    color: #234969;
+    background-color: #fef7f0;
+    border: none;
+    outline: 0;
+  }
+  &__form-input::placeholder{
+    color: #234969;
+  }
+  
+  &__form-btn{
+    width: 100px;
+    height: 38px;
+    @extend %dmsans-400;
+    outline: 0;
+    color: #ffffff;
+    border: none;
+    background-color: #a3bbc8;
+    cursor: pointer;
+  }
+}
+.footer-bottom{
+  margin-bottom: 39px;
+  display: flex;
+  justify-content: space-between;
+  @extend %Rubik-400; 
+  color: #7b7b7b;
+  &__items{
+  display: flex;
+  }
+  &__item{
+  padding: 0 0 0 14px;
+  }
+  &__item + .footer-bottom__item::before{
+    content: "";
+    border-left: 1px solid;
+    border-color: #7b7b7b;
+    height: 17px;
+    padding: 0 15px;
+  }
+  &__menu-link{
+    font-size: 14px;
+    line-height: 32px;
+    color: #7b7b7b;
+  }
+}
+
+@media (max-width: 1200px){
+  .footer-top{
+    flex-wrap: wrap;
+    &__item{
+      width: 100%;
+      margin-right: 0;
+    }
+    &__form{
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 800px){
+  .footer-bottom{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px){
+  .footer-bottom{
+    font-size: 13px;
+  }
+}
