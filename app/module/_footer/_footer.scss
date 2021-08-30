@@ -35,7 +35,12 @@
     color: $title-footer;
     @extend %dmsans-700;
     text-transform: uppercase;
+    pointer-events: none;
+    svg{
+      display: none;
+    }
   }
+
   &__link,
   &__text,
   &__phone,
@@ -112,6 +117,21 @@
     }
     &__form{
       justify-content: center;
+    }
+    &__title{
+      pointer-events: visible;
+      display: flex;
+      align-items: center;
+      svg{
+        display: block;
+        margin-left: 10px;
+      }
+    }
+    &__slide{
+      margin-bottom: 0;
+    }
+    &__list{
+      display: none;
     }
   }
 }
