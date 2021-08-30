@@ -116,3 +116,25 @@
     color: #9a9a9a;
   }
 }
+
+@media (max-width: 1000px){
+  .blog-page{
+    &__pagination{
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .blog-page{
+  &__item-title{
+    font-size: 24px;
+  }
+  &__text{
+    font-size: 12px;
+  }
+}
+  .pagination{
+    padding-top: 25px;
+  }
+}

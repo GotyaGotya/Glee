@@ -17,3 +17,13 @@
   margin: 0;
 }
 
+@media (max-width: 800px){
+  .cooperate{
+    &__logo{
+      flex-wrap: wrap;
+    }
+    &__logo-wrapper{
+      margin: 10px 10px;
+    }
+  }
+}
